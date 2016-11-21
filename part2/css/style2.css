@@ -1,0 +1,63 @@
+
+/*闪屏*/
+.t-deblocking{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:100%;
+    left:0;
+    background: url(../img/bg_deblocking.jpg) repeat center;
+    background-size: 100% auto;
+    z-index:98;
+    overflow: hidden;
+    animation: move 20s linear infinite;
+    -webkit-animation: move 20s linear infinite;
+}
+
+@-webkit-keyframes move {
+    0% {
+        background-position:0 0px;
+    }
+    50% {
+       background-position:200px 200px;
+    }
+    100%{
+        background-position:0 0px;
+    }
+}
+@keyframes move {
+    0% {
+        background-position:0 0px;
+    }
+    50% {
+       background-position:200px 200px;
+    }
+    100%{
+        background-position:0 0px;
+    }
+}
+
+
+
+.t-deblocking .txt-3{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    margin-top:-180px;
+    font-size: 15px;
+    text-align: center;
+    color: #aca7c3;
+    font-weight: bolder;
+    opacity: 1;
+}
+.t-deblocking .txt-3 p:last-of-type{
+    margin-top: 5px;
+    font-size: 9px;
+    font-family: Arial;
+    color: #59556f;
+}
+.t-deblocking .txt-3.fadeInDown{
+    opacity: 0;
+    animation: fadeInDown 1s linear;
+    -webkit-animation: fadeInDown 1s linear;
+}

@@ -1,0 +1,148 @@
+/* reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  line-height:1;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust:none;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+ul {
+  list-style:none;
+}
+blockquote, q {
+  quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #DDE;
+}
+
+
+/*内容*/
+.t-ios-main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  z-index: 1;
+}
+
+.t-ios-main .container {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.t-ios-main .container .box {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  width: 512px;
+  height: 512px;
+  top: 50%;
+  left: 50%;
+  margin: -256px 0 0 -256px;
+  /*background: #2196F3;*/
+}
+
+
+.t-ios-main .container .box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 50% 50% 0;
+  -webkit-backface-visibility: hidden;
+  background-size: 512px;
+  background-size: 2800px;
+  
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+/*北*/
+.t-ios-main .container .box .nf {
+  background-image: url(../img/n.jpg);
+  -webkit-transform: rotateX(0deg) rotateY(0deg) translateZ(-255px);
+  /*background: rebeccapurple;*/
+  background-image: url(../img/a.jpg);
+  
+}
+
+/*东*/
+.t-ios-main .container .box .ef {
+  background-image: url(../img/e.jpg);
+  -webkit-transform: rotateX(0deg) rotateY(-90deg) translateZ(-255px);
+  /*background: #3F51B5;*/
+  background-image: url(../img/b.jpg);
+  
+}
+
+/*南*/
+.t-ios-main .container .box .sf {
+  background-image: url(../img/s.jpg);
+  -webkit-transform: rotateX(0deg) rotateY(180deg) translateZ(-255px);
+  background: #CDDC39;
+}
+
+/*西*/
+.t-ios-main .container .box .wf {
+  background-image: url(../img/w.jpg);
+  -webkit-transform: rotateX(0deg) rotateY(90deg) translateZ(-255px);
+  background: #607D8B;
+}
+
+/*上*/
+.t-ios-main .container .box .uf {
+  background-image: url(../img/u.jpg);
+  -webkit-transform: rotateX(-90deg) rotateY(0deg) translateZ(-255px);
+  background: #000;
+}
+
+/*下*/
+.t-ios-main .container .box .df {
+  background-image: url(../img/d.jpg);
+  -webkit-transform: rotateX(90deg) rotateY(0deg) translateZ(-255px);
+  /*background: #FF9800;*/
+  background: #fff;
+}
